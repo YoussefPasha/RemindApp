@@ -5,6 +5,7 @@ import { currentUser } from "@clerk/nextjs";
 import { Suspense } from "react";
 import SadFace from "@/components/icons/SadFace";
 import CreateCollectionBtn from "./_components/CreateCollectionBtn";
+import CollectionCard from "./_components/CollectionCard";
 
 export default async function Home() {
   return (
@@ -88,11 +89,11 @@ async function CollectionList() {
   return (
     <>
       <CreateCollectionBtn />
-      {/* <div className="flex flex-col gap-4 mt-6">
+      <div className="flex flex-col gap-4 mt-6">
         {collections.map((collection) => (
           <CollectionCard key={collection.id} collection={collection} />
         ))}
-      </div> */}
+      </div>
     </>
   );
 }
