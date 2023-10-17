@@ -1,5 +1,5 @@
 "use client";
-import { Collection, Task } from "@prisma/client";
+import { Collection, Task } from "@/prisma/generated/client";
 import React, { useMemo, useState, useTransition } from "react";
 import {
   Collapsible,

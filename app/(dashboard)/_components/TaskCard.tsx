@@ -1,5 +1,5 @@
 "use client";
-import { Task } from "@prisma/client";
+import { Task } from "@/prisma/generated/client";
 import React, { useTransition } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
 import { format } from "date-fns";
